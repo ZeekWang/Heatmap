@@ -1,5 +1,5 @@
 /*!
- * Heatmap JavaScript Library v1.1
+ * Heatmap JavaScript Library v1.2
  *
  * Usage:
  * 	1. Initialize. You need to create a object with these fields: 
@@ -34,8 +34,8 @@
  * 		to fix or release the max density value. You need to execute 
  * 		fixMaxDensity after drawing and execute releaseMaxDensity before drawing.
  *		
- *	AUTHOR: Wang Zhenhuang
- *  Date: 2013/03/09
+ *	AUTHOR: Zeek Wang
+ *  Date: 2013/07/22
  */
 
 (function(){
