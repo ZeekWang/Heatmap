@@ -15,7 +15,6 @@ Heatmap JavaScript Library v1.2
   							//the quality will decrease with the value increase
   							//lower quality means less time consuming					
    				context: $(canvas).getContext('2d')  //the context of the canvas
-  
   			}
   			heatmap(config);
   
