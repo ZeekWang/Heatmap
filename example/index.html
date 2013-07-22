@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+	<script src="../heatmap.js"></script>
+	<script src="jquery.js"></script>
+</head>
+<body>
+	<canvas id="canvas"></canvas>
+
+	<script>
+	document.getElementById("canvas").width = 300;
+	document.getElementById("canvas").height = 300;
+	var config = {
+ 		width: 300, //width of the canvas
+ 		height: 300, //height of the canvas
+ 		sigma: 8, // sigma of Gauss Kernel
+ 		radius: 60, // raidus of Gauss kernel
+ 		quality: 1, //1 is the best quality, 
+ 					//and the quality will decrease with the value increase
+  		context: document.getElementById("canvas").getContext('2d')  //the context of the canvas
+ 	}
+ 	heatmap(config);
+
+ 	var nodes = [
+ 		{x:100, y:120}, 
+ 		{x:150, y:150}, 
+ 		{x:270, y:140},
+ 		{x:120, y:150},
+ 		{x:110, y:145},
+ 		{x:115, y:160},
+ 		{x:131, y:163},
+ 		{x:135, y:143},
+		{x:100, y:150},
+		{x:220, y:70},
+		{x:90, y:20},
+		{x:100, y:19},
+ 		];
+ 	heatmap.draw(nodes);
+	</script>
+</body>
