@@ -1,5 +1,6 @@
 Heatmap
 
+
 Heatmap JavaScript Library v1.2
   Usage:
     1. Initialize. You need to create a object with these fields: width, height, sigma, radius, context.
